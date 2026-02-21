@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AuraVideo AI Generator</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body{background:#0b0b0f;color:white;font-family:Inter;margin:0;padding:20px}
+.container{max-width:700px;margin:auto;text-align:center}
+textarea{width:100%;height:140px;border-radius:10px;border:none;padding:12px;margin-top:15px}
+.btn{background:#6C5CE7;border:none;padding:12px 20px;border-radius:10px;color:white;margin-top:15px}
+.result{margin-top:30px;background:#18181b;padding:20px;border-radius:12px}
+</style>
+</head>
+
+<body>
+<div class="container">
+<h1>Create AI Video</h1>
+<p>Describe your idea and generate a video</p>
+
+<textarea id="prompt" placeholder="A futuristic city with neon lights..."></textarea>
+<br>
+<button class="btn" onclick="generate()">Generate Video</button>
+
+<div id="output" class="result" style="display:none">
+<h3>Your AI Video</h3>
+<p>🎬 Demo video preview (AI integration coming soon)</p>
+</div>
+</div>
+
+<script>
+function generate(){
+document.getElementById("output").style.display="block";
+}
+</script>
+
+</body>
+</html>
